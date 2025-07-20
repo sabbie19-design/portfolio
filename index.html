@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABSTRACTS - Digital Artist & Animator</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <!-- Abstract Background Shapes -->
+    <div class="abstract-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SABSTRACTS</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="works.html" class="nav-link">Works</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Creating</span>
+                    <span class="title-line">Digital</span>
+                    <span class="title-line">Experiences</span>
+                </h1>
+                <p class="hero-subtitle">Digital Artist & Graphic Designer specializing in abstract visuals and
+                    immersive storytelling</p>
+                <div class="hero-buttons">
+                    <a href="works.html" class="btn btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Let's Collaborate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Reel Section -->
+    <section class="demo-reel">
+        <div class="container">
+            <h2 class="section-title">Demo Reel</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="30" fill="rgba(255, 255, 255, 0.1)" />
+                            <polygon points="25,20 25,40 40,30" fill="white" />
+                        </svg>
+                    </div>
+                    <p>Click to play demo reel</p>
+                </div>
+                <!-- Replace with your actual video -->
+                <video class="demo-video" controls style="display: none;">
+                    <source src="video/portfolio.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Works Preview -->
+    <section class="featured-works">
+        <div class="container">
+            <h2 class="section-title">Featured Works</h2>
+            <div class="works-grid">
+                <div class="work-card" data-category="animation">
+                    <div class="work-image">
+                        <div class="work-placeholder">Animation</div>
+                    </div>
+                    <h3>Motion Graphics</h3>
+                    <p>Abstract animation exploring fluid dynamics</p>
+                </div>
+                <div class="work-card" data-category="digital">
+                    <div class="work-image">
+                        <div class="work-placeholder">Digital Art</div>
+                    </div>
+                    <h3>Digital Works</h3>
+                    <p>Mixed media digital artwork</p>
+                </div>
+                <div class="work-card" data-category="photography">
+                    <div class="work-image">
+                        <div class="work-placeholder">Photography</div>
+                    </div>
+                    <h3>Abstract Photography</h3>
+                    <p>Conceptual photography series</p>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="works.html" class="btn btn-outline">View All Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <!-- Contact Section -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="footer-info">
+                        <p><strong>Email:</strong> sabcabigon19@gmail.com</p>
+                        <p><strong>Address:</strong> Balubaran Mallinta, Valenzuela City</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="about.html" class="footer-link">About</a>
+                        <a href="works.html" class="footer-link">Works</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+
+
+                <!-- Social & Follow Section -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/isa.one1/" class="social-link" target="_blank">
+                            <span class="social-icon">📷</span> @isa.one1
+                        </a>
+                        <a href="https://web.facebook.com/lorraineisabelb.cabigon" class="social-link" target="_blank">
+                            <span class="social-icon">📘</span> sabSTRACTS
+                        </a>
+
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="sabSTRACTS" class="footer-logo-img">
+                        <h2>sabSTRACTS</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 sabSTRACTS | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

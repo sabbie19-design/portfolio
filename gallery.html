@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sabstracts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Text:wght@400;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Layers -->
+    <div class="background-layers">
+        <div class="bg-layer"></div>
+        <div class="bg-layer"></div>
+        <div class="bg-layer"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Sabstracts</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+        <div class="gallery-hero-content">
+            <h1>Gallery Collections</h1>
+            <p>Curated works spanning multiple mediums and artistic expressions</p>
+        </div>
+    </section>
+
+    <!-- Gallery Navigation -->
+    <div class="gallery-nav">
+        <button class="gallery-nav-btn active" data-category="all">All Works</button>
+        <button class="gallery-nav-btn" data-category="animations">Animations</button>
+        <button class="gallery-nav-btn" data-category="digital">Digital Works</button>
+        <button class="gallery-nav-btn" data-category="photography">Photography</button>
+        <button class="gallery-nav-btn" data-category="artworks">Artworks</button>
+    </div>
+
+    <!-- Animations Section -->
+    <section id="animations" class="gallery-section animate-on-scroll">
+        <div class="section-header">
+            <h2 class="section-title">Animations</h2>
+            <p class="section-subtitle">Motion graphics and animated experiences</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="animations" onclick="openModal('Vintage Motion Study', 'A exploration of classic animation techniques with modern digital tools. This piece combines traditional frame-by-frame animation with contemporary digital effects.')">
+                <div class="gallery-item-image">🎬</div>
+                <div class="tag">Motion</div>
+                <div class="gallery-item-content">
+                    <h3>Vintage Motion Study</h3>
+                    <p>A exploration of classic animation techniques with modern digital tools</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animations" onclick="openModal('Interactive Elements', 'Web-based animations that respond to user interaction, creating immersive digital experiences.')">
+                <div class="gallery-item-image">⚡</div>
+                <div class="tag">Interactive</div>
+                <div class="gallery-item-content">
+                    <h3>Interactive Elements</h3>
+                    <p>Web-based animations that respond to user interaction</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animations" onclick="openModal('3D Experiments', 'Three-dimensional animations exploring space, form, and the intersection of virtual and physical worlds.')">
+                <div class="gallery-item-image">🎭</div>
+                <div class="tag">3D</div>
+                <div class="gallery-item-content">
+                    <h3>3D Experiments</h3>
+                    <p>Three-dimensional animations exploring space and form</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animations" onclick="openModal('Kinetic Typography', 'Typography in motion, exploring the relationship between text and time.')">
+                <div class="gallery-item-image">📝</div>
+                <div class="tag">Typography</div>
+                <div class="gallery-item-content">
+                    <h3>Kinetic Typography</h3>
+                    <p>Typography in motion, exploring text and time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Works Section -->
+    <section id="digital" class="gallery-section animate-on-scroll">
+        <div class="section-header">
+            <h2 class="section-title">Digital Works</h2>
+            <p class="section-subtitle">Digital art and design compositions</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="digital" onclick="openModal('Abstract Composition', 'Digital exploration of form, color, and texture using contemporary digital painting techniques.')">
+                <div class="gallery-item-image">🎨</div>
+                <div class="tag">Abstract</div>
+                <div class="gallery-item-content">
+                    <h3>Abstract Composition</h3>
+                    <p>Digital exploration of form, color, and texture</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="digital" onclick="openModal('Vintage Poster Series', 'Typography and layout inspired by museum exhibitions and vintage advertising.')">
+                <div class="gallery-item-image">📜</div>
+                <div class="tag">Poster</div>
+                <div class="gallery-item-content">
+                    <h3>Vintage Poster Series</h3>
+                    <p>Typography and layout inspired by museum exhibitions</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="digital" onclick="openModal('Digital Collage', 'Mixed media digital compositions combining photography, illustration, and digital painting.')">
+                <div class="gallery-item-image">🖼️</div>
+                <div class="tag">Collage</div>
+                <div class="gallery-item-content">
+                    <h3>Digital Collage</h3>
+                    <p>Mixed media digital compositions</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="digital" onclick="openModal('Interface Design', 'User interface designs with vintage museum aesthetics and modern functionality.')">
+                <div class="gallery-item-image">💻</div>
+                <div class="tag">UI/UX</div>
+                <div class="gallery-item-content">
+                    <h3>Interface Design</h3>
+                    <p>Vintage-inspired digital interfaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="gallery-section animate-on-scroll">
+        <div class="section-header">
+            <h2 class="section-title">Photography</h2>
+            <p class="section-subtitle">Captured moments through a vintage lens</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="photography" onclick="openModal('Vintage Portraits', 'Classical portrait photography with modern subjects, exploring timeless human expression.')">
+                <div class="gallery-item-image">📷</div>
+                <div class="tag">Portrait</div>
+                <div class="gallery-item-content">
+                    <h3>Vintage Portraits</h3>
+                    <p>Classical portrait photography with modern subjects</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="photography" onclick="openModal('Museum Spaces', 'Architectural details and museum interiors capturing the essence of cultural institutions.')">
+                <div class="gallery-item-image">🏛️</div>
+                <div class="tag">Architecture</div>
+                <div class="gallery-item-content">
+                    <h3>Museum Spaces</h3>
+                    <p>Architectural details and museum interiors</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="photography" onclick="openModal('Curated Objects', 'Still life compositions of vintage artifacts and museum pieces.')">
+                <div class="gallery-item-image">🏺</div>
+                <div class="tag">Still Life</div>
+                <div class="gallery-item-content">
+                    <h3>Curated Objects</h3>
+                    <p>Still life compositions of vintage artifacts</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="photography" onclick="openModal('Light Studies', 'Exploration of natural and artificial light in gallery and museum settings.')">
+                <div class="gallery-item-image">💡</div>
+                <div class="tag">Light</div>
+                <div class="gallery-item-content">
+                    <h3>Light Studies</h3>
+                    <p>Natural and artificial light explorations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artworks Section -->
+    <section id="artworks" class="gallery-section animate-on-scroll">
+        <div class="section-header">
+            <h2 class="section-title">Artworks</h2>
+            <p class="section-subtitle">Traditional and mixed media creations</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="artworks" onclick="openModal('Mixed Media Study', 'Traditional painting techniques combined with modern materials and digital elements.')">
+                <div class="gallery-item-image">🖌️</div>
+                <div class="tag">Painting</div>
+                <div class="gallery-item-content">
+                    <h3>Mixed Media Study</h3>
+                    <p>Traditional painting techniques with modern materials</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="artworks" onclick="openModal('Sculptural Forms', 'Three-dimensional explorations in various materials, from clay to digital fabrication.')">
+                <div class="gallery-item-image">🗿</div>
+                <div class="tag">Sculpture</div>
+                <div class="gallery-item-content">
+                    <h3>Sculptural Forms</h3>
+                    <p>Three-dimensional explorations in various materials</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="artworks" onclick="openModal('Printmaking Series', 'Limited edition prints exploring vintage printmaking techniques with contemporary themes.')">
+                <div class="gallery-item-image">🖨️</div>
+                <div class="tag">Print</div>
+                <div class="gallery-item-content">
+                    <h3>Printmaking Series</h3>
+                    <p>Limited edition prints exploring vintage techniques</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="artworks" onclick="openModal('Drawing Studies', 'Traditional drawing explorations using charcoal, ink, and graphite.')">
+                <div class="gallery-item-image">✏️</div>
+                <div class="tag">Drawing</div>
+                <div class="gallery-item-content">
+                    <h3>Drawing Studies</h3>
+                    <p>Traditional media explorations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#animations">Animations</a></li>
+                    <li><a href="#digital">Digital Works</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                    <li><a href="#artworks">Artworks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>hello@sabstracts.com</p>
+                <p>Studio visits by appointment</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sabstracts. All rights reserved. | Vintage Museum Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="modal-image-placeholder">
+                <p>📸 Your artwork image will appear here</p>
+            </div>
+            <p id="modal-description"></p>
+            <div class="modal-details">
+                <p><strong>Medium:</strong> <span id="modal-medium">Digital/Traditional</span></p>
+                <p><strong>Year:</strong> <span id="modal-year">2025</span></p>
+                <p><strong>Dimensions:</strong> <span id="modal-dimensions">Variable</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
